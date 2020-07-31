@@ -7,37 +7,82 @@
     <link href="style.css" rel="stylesheet" media="all">
 </head>
 <body>
-    <header>
-        <ul>
-            <li id="menu">
-                <img src="assets/menu.png" alt="" id="menu-icon">
-            </li>
-            <li id="logo">
-                <img src="assets/logo.png" alt="" id="logo-icon">
-            </li>
-            <li id="search">
-                <div id="search-flex">
-                    <input type="text">
-                    <button></button>
+    <div id="all-element">
+        <header>
+            <ul>
+                <li id="menu">
+                    <img src="assets/menu.png" alt="" id="menu-icon">
+                </li>
+                <li id="logo">
+                    <img src="assets/logo.png" alt="" id="logo-icon">
+                </li>
+                <li id="search">
+                    <div id="search-flex">
+                        <input type="text" placeholder="Search">
+                        <button id="search-btn"></button>
+                    </div>
+                </li>
+                <li id="create">
+                    <img src="assets/video.webp" alt="" id="create-icon">
+                </li>
+                <li id="apps">
+                    <img src="assets/baseline-apps-24px.svg" alt="" id="apps-icon">
+                </li>
+                <li id="notification">
+                    <img src="assets/notification.webp" alt="" id="notification-icon">
+                </li>
+                <li id="account">
+                    <img src="assets/identicon_github.png" alt="" id="account-icon">
+                </li>
+            </ul>
+        </header>
+        <div id="container">
+            <section id="main">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/ALZHF5UqnU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p id="hashtags">#Marshmello #Alone #Mellogang</p>
+                <p id="song-name">Marshmello - Alone (Official Music Video)</p>
+                <ul id="info-line">
+                    <li id="views"><pre>1,771,954,243 views • 2 Jul 2016</pre></li>
+                    <li><button id="like"></button></li>
+                    <li id="like-no">17M</li>
+                    <li><button id="dislike-btn"></button></li>
+                    <li id="dislike-no">567k</li>
+                    <li><button id="share">SHARE</button></li>
+                    <li><button id="save">SAVE</button></li>
+                    <li><button id="more-icon"></button></li>
+                </ul>
+                <hr id="below-info">
+                </section>
+            <aside>  
+                <div id="up-next">
+                    <p id="up-next-text">Up next</p>
+                    <img src="assets/happier.jpg" alt="" id="up-next-img">
                 </div>
-            </li>
-            <li id="create">
-                <img src="assets/video.webp" alt="" id="create-icon">
-            </li>
-            <li id="apps">
-                <img src="assets/baseline-apps-24px.svg" alt="" id="apps-icon">
-            </li>
-            <li id="notification">
-                <img src="assets/notification.webp" alt="" id="notification-icon">
-            </li>
-            <li id="account">
-                <img src="assets/account_icon.png" alt="" id="account-icon">
-            </li>
-        </ul>
-    </header>
-    <div id="container">
-        <section id="main"></section>
-        <aside></aside> 
+                <hr id="after-up-next">
+                <div id="aside-container">
+                    <div>
+                        <img src="assets/wolves.jpg" alt="" class="next-up">
+                        <pre>  Selena Gomez, Marshmello
+                             Wolves</pre>
+                    </div>
+                    <div>
+                        <img src="assets/faded.jpg" alt="" class="next-up">
+                    </div>
+                    <div>
+                        <img src="assets/goodbyes.jpg" alt="" class="next-up">
+                    </div>
+                    <div>
+                        <img src="assets/rockstar.jpg" alt="" class="next-up">
+                    </div>
+                    <div>
+                        <img src="assets/blinding_lights.jpg" alt="" class="next-up">
+                    </div>
+                    <div>
+                        <img src="assets/death_bed.jpg" alt="" class="next-up">
+                    </div>
+                </div>
+            </aside> 
+        </div>
     </div>
 </body>
 </html>

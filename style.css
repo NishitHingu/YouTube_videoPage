@@ -50,66 +50,196 @@ table {
 /*My css*/
 
 header{
-    height: 200px;
+    height: 55px;
     width: 100%;
-    background-color: whitesmoke;
 }
 #container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: whitesmoke;
 }
 ul{
+    display: flex;
+    align-items: center;
     list-style: none;
 }
 li{
     display: inline-block;
 }
 #menu-icon{
-    height: 120px;
-    width: 130px;
+    height: 20px;
+    width: 20px;
     opacity: 0.8;
-    padding: 30px 30px 30px 100px;
+    padding: 10px 20px 0 20px;
+    cursor: pointer;
 }
 
-#notification-icon,#create-icon,#apps-icon{
-    height: 100px;
+#notification-icon,#create-icon,#apps-icon,#account-icon{
+    height: 25px;
+    margin: 10px 10px 0 10px;
+    cursor: pointer;
+    opacity: 0.8;
 }
 #logo-icon{
-    height: 100px;
-    padding: 40px 40px 40px 50px;
+    height: 25px;
+    padding: 10px 25px 0 5px;
 }
 #search{
-    width: 50%;
+    width: 60%;
 }
 #search-flex{
+    padding: 0 0 0 10px;
     display: flex;
+    margin: 8px 0 0 30px;
 }
 input{
-    width: 70%;
-    height: 125px;
-    padding: 0px;
+    width: 80%;
+    height: 23px;
+    padding: 2px 5px;
+    font-size: 18px;
+    border: 1px solid rgb(187, 185, 185);
+    border-right-width: 0px;
 }
-button{
+#search-btn{
     display: inline-block;
     background-image: url(assets/search_icon.png);
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 20px;
+    background-color: rgb(245, 245, 245);
     background-position: center;
-    width: 200px;
-    height: 125px;
+    opacity: 0.6;
+    width: 60px;
+    height: 29px;
     cursor: pointer;
+    border: 1px solid rgb(187, 185, 185);
+}
+#create-icon{
+    margin-left: 150px;
+    height: 33px;
 }
 #account-icon{
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
-    padding: 20px;
+    padding: 2px;
 }
-section{
 
-    height: 1000px;
+section{
+    height: 60em;
+    margin: 25px 10px 0 35px;
+}
+#hashtags{
+    font-size: 14px;
+    color: blue;
+    margin: 15px 0 5px 0;
+}
+#song-name{
+    font-size: 26px;
+}
+#info-line{
+    margin: 20px 0 10px 0;
+    justify-items: baseline;
+}
+#views{
+    font-size: 16px;
+    color: rgb(77, 76, 76);
+    margin: 0 30px 0 0;
+}
+#like,#dislike-btn,#more-icon{
+    border-radius: 50%;
+    border: transparent;
+    margin: 5px 5px 10px 5px;
+    cursor: pointer;
+    background-size: 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    height: 27px;
+    width: 27px;
+    opacity: 0.5;
+}
+#share,#save{
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    border: transparent;
+    margin: 3px 5px 5px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: right;
+    opacity: 0.6;
+    font-weight: 550;
+    font-size: 12px;
+    
+}
+#like{
+    background-image: url(assets/like.png); 
+    opacity: 0.5;
+    margin-left: 225px;
+}
+#dislike-btn{
+    margin-bottom: 5px;
+    background-image: url(assets/dislike.png);
+}
+#like-no,#dislike-no{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 7px 20px 7px 0;
+    opacity: 0.7;
+}
+#share{
+    background-image: url(assets/share.png);
+    background-position-x: 5px;
+    background-position-y: center;
+    background-size: 17px;
+    height: 27px;
+    width: 80px;
+}
+#save{
+    background-image: url(assets/save.png);
+    background-position-x: 10px;
+    background-position-y: bottom;
+    background-size: 19px;
+    margin-left: 3px;
+    margin-right: 10px;
+    width: 75px;
+    opacity: 0.8;
+}
+#more-icon{
+    background-image: url(assets/more.png);
+    margin-top: 13px;
+    margin-right: 0;
+}
+#below-info{
+    margin-left: 0;
+    width: 853px;
+    opacity: 0.5;
 }
 aside{
-    width: 100px;
+    width: 450px;
+    margin: 0 0 0 15px;
+    padding: 0;
 
+}
+#aside-container{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    height: 47em;
+}
+#up-next-text{
+    font-size: 18px;
+    margin:30px 0 10px 10px;
+    font-weight: 500;
+}
+#after-up-next{
+    opacity: 0.5;
+
+}
+#up-next-img{
+    display: inherit;
+    width: 150px;
+    height: 90px;
+}
+.next-up{
+    float: left;
+    width: 150px;
+    height: 90px;
 }
