@@ -48,14 +48,10 @@ table {
 }
 
 /*My css*/
+/*header css*/
 header{
     height: 55px;
     width: 100%;
-}
-#container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    background-color: rgb(248, 248, 248);
 }
 ul{
     display: flex;
@@ -65,22 +61,22 @@ ul{
 li{
     display: inline-block;
 }
-#menu-icon{
+.menu-icon{
     height: 20px;
     width: 20px;
-    opacity: 0.8;
+    opacity: 0.7;
     padding: 10px 20px 0 20px;
     cursor: pointer;
 }
 
-#notification-icon,#create-icon,#apps-icon,#account-icon{
-    height: 25px;
+.notification-icon,.create-icon,.apps-icon,.account-icon{
+    height: 23px;
     margin: 10px 10px 0 10px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 #logo-icon{
-    height: 25px;
+    height: 21px;
     padding: 10px 25px 0 5px;
 }
 #search{
@@ -99,11 +95,11 @@ input{
     border: 1px solid rgb(187, 185, 185);
     border-right-width: 0px;
 }
-#search-btn{
+.search-btn{
     display: inline-block;
     background-image: url(assets/search_icon.png);
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 18px;
     background-color: rgb(245, 245, 245);
     background-position: center;
     opacity: 0.6;
@@ -112,23 +108,30 @@ input{
     cursor: pointer;
     border: 1px solid rgb(187, 185, 185);
 }
-#create-icon{
+.create-icon{
     margin-left: 130px;
     height: 33px;
 }
-#account-icon{
+.account-icon{
     border-radius: 50%;
     padding: 2px;
+    opacity: 0.8;
 }
 /* main video block css*/
 #main{
-    height: 90em;
+    height: 115em;
     margin: 25px 10px 0 35px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(248, 248, 248);
 }
 #hashtags{
     font-size: 14px;
     color: blue;
     margin: 15px 0 5px 0;
+    cursor: pointer;
 }
 #song-name{
     font-size: 26px;
@@ -142,7 +145,7 @@ input{
     color: rgb(77, 76, 76);
     margin: 0 30px 0 0;
 }
-#like,#dislike-btn,#more-icon{
+.like,.dislike-btn,.more-icon{
     border-radius: 50%;
     border: transparent;
     margin: 5px 5px 10px 5px;
@@ -155,7 +158,7 @@ input{
     width: 27px;
     opacity: 0.5;
 }
-#share,#save{
+.share,.save{
     border-radius: 50%;
     background-repeat: no-repeat;
     border: transparent;
@@ -168,23 +171,23 @@ input{
     font-size: 12px;
     
 }
-#like{
+.like{
     background-image: url(assets/like.png); 
     opacity: 0.5;
     margin-left: 225px;
 }
-#dislike-btn{
+.dislike-btn{
     margin-bottom: 5px;
     background-image: url(assets/dislike.png);
 }
-#like-no,#dislike-no{
+.like-no,.dislike-no{
     font-size: 14px;
     font-weight: 500;
     text-align: center;
     margin: 7px 20px 7px 0;
     opacity: 0.7;
 }
-#share{
+.share{
     background-image: url(assets/share.png);
     background-position-x: 5px;
     background-position-y: center;
@@ -192,7 +195,7 @@ input{
     height: 27px;
     width: 80px;
 }
-#save{
+.save{
     background-image: url(assets/save.png);
     background-position-x: 10px;
     background-position-y: bottom;
@@ -202,7 +205,7 @@ input{
     width: 75px;
     opacity: 0.8;
 }
-#more-icon{
+.more-icon{
     background-image: url(assets/more.png);
     margin-top: 13px;
     margin-right: 0;
@@ -251,7 +254,7 @@ input{
     font-size: 18px;
     font-weight: 500;
 }
-#sort-by{
+.sort-by{
     background-image: url(assets/sort.png);
     background-repeat: no-repeat;
     background-size: 18px;
@@ -369,6 +372,7 @@ input{
 
 /*right side*/
 aside{
+    background-color: rgb(248, 248, 248);
     width: 425px;
     margin: 0 0 0 15px;
     padding: 0;
@@ -435,3 +439,19 @@ aside{
     margin: 0 0 5px 180px;
     cursor: pointer;
 }
+/*hover and focus effects*/
+input:focus{
+    outline:1px solid blue;
+}
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+button:focus{
+    opacity: 1;
+    outline-color: rgb(70, 70, 70);
+}
+img:hover{
+    opacity: 0.9;
+}
+
